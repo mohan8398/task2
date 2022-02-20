@@ -1,34 +1,37 @@
 
 //console.dir(document);
-console.log(document.domain);
-console.log(document.URL);
-console.log(document.title);
-console.log(document.doctype);
-console.log(document.head);
-console.log(document.body);
-console.log(document.all);
-console.log(document.all[10]);
-console.log(document.links);
-console.log(document.images);
+//console.log(document.domain);
+//console.log(document.URL);
+//.log(document.title);
+//console.log(document.doctype);
+//console.log(document.head);
+//console.log(document.body);
+//console.log(document.all);
+//console.log(document.all[10]);
+//console.log(document.links);
+//console.log(document.images);
  //get element by id
-console.log(document.getElementById('header-title'));
-var headerTitle=document.getElementById('header-title');
-console.log(headerTitle);
-headerTitle.textContent='Hello';
-headerTitle.innerText='Goodbye';
-console.log(headerTitle.textContent);
-console.log(headerTitle.innerText);
-headerTitle.style.borderBottom='solid 3px #000'
+//console.log(document.getElementById('header-title'));
+//var headerTitle=document.getElementById('header-title');
+//.log(headerTitle);
+//headerTitle.textContent='Hello';
+//.innerText='Goodbye';
+//.log(headerTitle.textContent);
+//.log(headerTitle.innerText);
+//.style.borderBottom='solid 3px #000'
 
 //get element by class name
-var item =document.getElementByClassName('list-group-item');
+var items =document.getElementByClassName('list-group-item');
 console.log(items);
-console.log(item[1]);
-items[1].textContent='Hello 2';
-items[1].fonrweight='bold';
-items[1].backgroundColor="purple";
+console.log(items[1]);
+//items.textContent='ADD ITEM';
+items.fonrweight='bold';
+items[2].backgroundColor="green";
 
 
+for(var i=0; i<items.length; i++){
+    items[i].getElementsByClassName.backgroundColor="#f4f4f4";
+}
 
 
 
